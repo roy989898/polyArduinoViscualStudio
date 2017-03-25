@@ -11,6 +11,8 @@
 void setup()
 {
 	// initialize LED digital pin as an output.
+	//Initiate Serial communication.
+	Serial.begin(9600);
 	pinMode(LED_BUILTIN, OUTPUT);
 }
 
@@ -27,4 +29,5 @@ void loop()
 
 	// wait for a second
 	delay(1000);
+	Serial.print("try");
 }
